@@ -1,0 +1,36 @@
+{
+  "user": [
+    {
+      "id": 101,
+      "name": "Nimish V",
+      "address1": "dfggd",
+      "address2": "3",
+      "mobile": 3443434343,
+      "email": "nimish@x.com",
+      "password": 123,
+      "dateOfBirth": "23-11-1999",
+      "dateOfRegisteration": "23-11-2022"
+    },
+    {
+      "name": "K Shivaji",
+      "email": "abcdffff@x.com",
+      "password": 123,
+      "Address1": "dfggd",
+      "Address2": "3",
+      "Mobile": 9443434343,
+      "dateOfBirth": "02-11-1999",
+      "id": 102
+    },
+    {
+      "name": "Aditya S",
+      "email": "abcd@x.com",
+      "password": 123,
+      "address1": "dfggd",
+      "address2": "3",
+      "mobile": 9443434340,
+      "dateOfBirth": "23-09-1999",
+      "dateOfRegisteration": "03-11-2022",
+      "id": 103
+    }
+  ]
+}
