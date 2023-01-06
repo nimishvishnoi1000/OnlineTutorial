@@ -5,6 +5,9 @@ import AllUsers from './User/AllUsers';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import UpdateUser from './User/UpdateUser';
 import ViewUser from './User/ViewUser';
+import ViewCategory from './Category/ViewCategory';
+import UpdateCategory from './Category/UpdateCategory';
+import CreateCategory from './Category/CreateCategory';
 
 
 
@@ -12,15 +15,17 @@ function App() {
   return (
     <div className="App">
       <Base>
-      <BrowserRouter>
-    <Routes>
-      <Route path="AllUsers" element={<AllUsers/>} ></Route>
-      <Route path="UpdateUser" element={<UpdateUser/>} ></Route>
-      <Route path="ViewUser" element={<ViewUser/>} ></Route>
-     
+        <BrowserRouter>
+          <Routes>
+            <Route path="AllUsers" element={<AllUsers />} ></Route>
+            <Route path="UpdateUser" element={<UpdateUser />} ></Route>
+            <Route path="ViewUser" element={<ViewUser />} ></Route>
+            <Route path='/category/viewCategory' element={<ViewCategory />}></Route>
+            <Route path='/category/createCategory' element={<CreateCategory />}></Route>
+            <Route path='/category/updateCategory/:categoryid' element={<UpdateCategory />}></Route>
 
-    </Routes>
-   </BrowserRouter>
+          </Routes>
+        </BrowserRouter>
       </Base>
     </div>
   );
