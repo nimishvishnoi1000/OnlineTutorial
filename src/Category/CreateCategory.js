@@ -54,7 +54,7 @@ const CreateCategory = () => {
                                     <div className="col-lg-12">
                                         <div className="form-group">
                                             <button className="btn btn-success" type="submit">Save</button>
-                                            <Link to="/category/list" className="btn btn-danger">Back</Link>
+                                            <Link to="/category/viewCategory" className="btn btn-danger">Back</Link>
                                         </div>
                                     </div>
 
