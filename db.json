@@ -36,7 +36,7 @@
   "category": [
     {
       "id": 1,
-      "name": "Science and Tech"
+      "name": "Science and Technology"
     },
     {
       "name": "Computer Science",
@@ -45,10 +45,6 @@
     {
       "name": "sports",
       "id": 3
-    },
-    {
-      "name": "Drama",
-      "id": 4
     }
   ]
 }

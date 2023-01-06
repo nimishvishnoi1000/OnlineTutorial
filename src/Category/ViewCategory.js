@@ -40,7 +40,7 @@ const ViewCategory = () => {
                     <h2>Category List</h2>
                     <div className="card-body">
                         <div className="divbtn">
-                            <Link to="/category/addCategory" className="btn btn-success">Add Category (+)</Link>
+                            <Link to="/category/createCategory" className="btn btn-success">Add Category (+)</Link>
                             <table className="table table-bordered">
                                 <thead className="bg-dark text-white">
                                     <tr>
@@ -57,8 +57,7 @@ const ViewCategory = () => {
                                                 <td>{item.id}</td>
                                                 <td>{item.name}</td>
                                                 <td><a onClick={() => { LoadEdit(item.id) }} className="btn btn-success">Edit</a>
-                                                <a onClick={() => { Removefunction(item.id) }} className="btn btn-danger">Remove</a>
-                                        {/* <a onClick={() => { LoadDetail(item.id) }} className="btn btn-primary">Details</a>  */}
+                                                <a onClick={() => { Removefunction(item.id) }} className="btn btn-danger">Remove</a>                                       
                                                 </td>
                                             </tr>
                                         ))
