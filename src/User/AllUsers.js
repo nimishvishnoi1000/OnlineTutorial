@@ -11,7 +11,7 @@ const AllUsers = () => {
     
     const fetchUsers = async () => {
 
-        const data = await fetch("http://localhost:5000/user")
+        const data = await fetch("http://localhost:3000/user")
         const parsedData = await data.json()
         setUser(parsedData)
       
@@ -19,18 +19,18 @@ const AllUsers = () => {
 
     useEffect(() => {
 
-        fetchUsers()
+        fetchUsers()    
 
     }, [])
 
     const deleteuser = async (id)=> {
-        const data = await fetch(`http://localhost:5000/user/${id}`, {method:'delete'})
+        const data = await fetch(`http://localhost:3000/user/${id}`, {method:'delete'})
         const response = await data.json()
         fetchUsers();
     }
 
     const FetchuserbyIdView = async (id)=> {
-        const data = await fetch(`http://localhost:5000/user/${id}`)
+        const data = await fetch(`http://localhost:3000/user/${id}`)
         const response =await data.json()
         
         fetchUsers();
@@ -38,7 +38,7 @@ const AllUsers = () => {
     }
 
     const FetchuserbyIdUpdate = async (id)=> {
-        const data = await fetch(`http://localhost:5000/user/${id}`)
+        const data = await fetch(`http://localhost:3000/user/${id}`)
         const response =await data.json()
         
         fetchUsers();
